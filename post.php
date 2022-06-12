@@ -1,13 +1,13 @@
 <html>
 <head>
-<meta charset="utf-8">
-<title>POST練習</title>
+	<meta charset="utf-8">
+	<title>POST練習</title>
 </head>
 <body>
 <h1>アンケート</h1>
 
 <form action="write.php" method="post">
-	お名前: <input type="text" name="name">
+	<p>お名前: <input type="text" name="name"></p>
 	<br>
 	EMAIL: <input type="text" name="mail">
 	<br>
