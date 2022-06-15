@@ -4,13 +4,16 @@
 <title>File書き込み</title>
 </head>
 <body>
-<h1>アンケート集計結果</h1>
+<h1>レビュー集計結果</h1>
 <table border="1">
 <tr>
-<th>日付(西暦)</th>
-<th>登録時刻</th>
+<th>登録時刻（年月日・時刻）</th>
 <th>名前</th>
 <th>メールアドレス</th>
+<th>居住地</th>
+<th>性別</th>
+<th>評価（５点満点）</th>
+<th>評価ポイント</th>
 </table>
     <?php
     $file = "./data/data.txt";
@@ -26,8 +29,23 @@
         echo "</table>\n";
         fclose ( $handle );
     }
-
+// http://mensbrand.blog110.fc2.com/blog-entry-40.html
+// グラフは上記サイトを参照
     ?>
+    <style>
+    table,tr,td,th{
+        border: solid 1px black; border-collapse: collapse;
+    }
+    td,th{
+        min-width: 60px;
+    }
+    th{
+        background: silver;
+    }
+    </style>
 
+<ul>
+<li><a href="index.php">index.php</a></li>
+</ul>
 </body>
 </html>
